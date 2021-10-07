@@ -1,0 +1,22 @@
+﻿<Window x:Class="Homework_Week4_GradedAssin.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Homework_Week4_GradedAssin"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid Height="423" VerticalAlignment="Top" Margin="0,0,-8,-4">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0*"/>
+            <ColumnDefinition Width="0*"/>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="0*"/>
+        </Grid.ColumnDefinitions>
+        <TextBox x:Name ="MonthlyMortagePaymentTextBox" HorizontalAlignment="Left" Height="23" Margin="244,100,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="104" Grid.ColumnSpan="3"/>
+        <TextBox x:Name ="OutstandingBalanceTextBox" HorizontalAlignment="Left" Height="23" Margin="244,169,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Grid.ColumnSpan="3" RenderTransformOrigin="0.942,0.565"/>
+        <Label x:Name ="MonthlyMortagePaymentLabel"  Grid.ColumnSpan="3" Content="Monthly mortage Payments" HorizontalAlignment="Left" Margin="82,97,0,0" VerticalAlignment="Top"/>
+        <Label x:Name ="OutstandingBalanceLabel"   Grid.ColumnSpan="3" Content="Outstanding balance" HorizontalAlignment="Left" Margin="82,169,0,0" VerticalAlignment="Top"/>
+        <Button x:Name ="EnterResultsButton"    Grid.ColumnSpan="3" Content="Press button" HorizontalAlignment="Left" Margin="244,249,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="2.013,0.4" Click="EnterResultsButton_Click"/>
+    </Grid>
+</Window>
